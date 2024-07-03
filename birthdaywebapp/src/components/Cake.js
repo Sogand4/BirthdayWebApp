@@ -10,18 +10,16 @@ const Cake = () => {
 
   return (
     <div className="cake">
-      <div className="cake-body">
-        {candles.map((lit, index) => (
-          <div
-            key={index}
-            className={`candle ${lit ? 'lit' : 'unlit'}`}
-            onClick={() => toggleCandle(index)}
-            style={{ left: `${20 + index * 20}%` }}
-          >
-            <div className="flame"></div>
-          </div>
-        ))}
-      </div>
+    {candles.map((lit, index) => (
+        <div
+        key={index}
+        className={`candle ${lit ? 'lit' : 'unlit'}`}
+        onClick={() => toggleCandle(index)}
+        style={{ left: `${20 + index * 20}%` }}
+        >
+        <div className="flame"></div>
+        </div>
+    ))}
     </div>
   );
 };

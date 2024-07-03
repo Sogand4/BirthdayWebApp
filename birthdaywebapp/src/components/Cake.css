@@ -1,18 +1,18 @@
-.cake {
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-    position: relative;
+    height: 100%; /* Ensure the html and body elements take up the full height of the viewport */
   }
-  
-  .cake-body {
+
+  .cake {
     width: 200px;
     height: 100px;
     background-color: pink;
     border-radius: 10px;
-    position: relative;
   }
   
   .candle {
@@ -20,7 +20,7 @@
     height: 40px;
     background-color: white;
     position: absolute;
-    bottom: 80px; /* Adjust based on the cake height */
+    bottom: 80px;
     cursor: pointer;
   }
   
