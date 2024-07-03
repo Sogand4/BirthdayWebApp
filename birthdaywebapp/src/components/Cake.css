@@ -1,10 +1,10 @@
-/* src/components/Cake.css */
 .cake {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 20px;
+    position: relative;
   }
   
   .cake-body {
@@ -20,28 +20,8 @@
     height: 40px;
     background-color: white;
     position: absolute;
-    bottom: 20px;
+    bottom: 80px; /* Adjust based on the cake height */
     cursor: pointer;
-  }
-  
-  .candle:nth-child(1) {
-    left: 20%;
-  }
-  
-  .candle:nth-child(2) {
-    left: 40%;
-  }
-  
-  .candle:nth-child(3) {
-    left: 50%;
-  }
-  
-  .candle:nth-child(4) {
-    left: 60%;
-  }
-  
-  .candle:nth-child(5) {
-    left: 80%;
   }
   
   .candle .flame {

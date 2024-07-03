@@ -16,6 +16,7 @@ const Cake = () => {
             key={index}
             className={`candle ${lit ? 'lit' : 'unlit'}`}
             onClick={() => toggleCandle(index)}
+            style={{ left: `${20 + index * 20}%` }}
           >
             <div className="flame"></div>
           </div>
