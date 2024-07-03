@@ -1,0 +1,63 @@
+/* src/components/Cake.css */
+.cake {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .cake-body {
+    width: 200px;
+    height: 100px;
+    background-color: pink;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .candle {
+    width: 10px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .candle:nth-child(1) {
+    left: 20%;
+  }
+  
+  .candle:nth-child(2) {
+    left: 40%;
+  }
+  
+  .candle:nth-child(3) {
+    left: 50%;
+  }
+  
+  .candle:nth-child(4) {
+    left: 60%;
+  }
+  
+  .candle:nth-child(5) {
+    left: 80%;
+  }
+  
+  .candle .flame {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid orange;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+  
+  .candle.lit .flame {
+    display: block;
+  }
+  
