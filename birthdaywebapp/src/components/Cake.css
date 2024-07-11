@@ -2,19 +2,49 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: green;
+    height: 100%;
+  }
+
+  .cake-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c5c5f8;
+  }
+
+  .cake-top-layer, .cake-middle-layer, .cake-bottom-layer {
+    border-radius: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Ensure the html and body elements take up the full height of the viewport */
+    background-repeat: no-repeat, repeat;
+    background-position: 50% 75%, 50% 0;
+    background-size: 100% 20%, cover;
+    background-image: 
+      linear-gradient(#f5fffa, #f5fffa),
+      radial-gradient(circle at 50% 2%, #eea9b8 30%, #ffdead 30%)
   }
 
-  .cake {
-    width: 200px;
-    height: 100px;
-    background-color: pink;
-    border-radius: 10px;
-  }
-  
+.cake-top-layer {
+  width: 10vh;
+  height: 6vh;
+  background-size: 100% 10%, 60% 163%;
+}
+
+.cake-middle-layer {
+  width: 16vh;
+  height: 7vh;
+  background-size: 100% 10%, 38% 143%;
+}
+
+.cake-bottom-layer {
+  width: 22vh;
+  height: 8vh;
+  background-size: 100% 10%, 29% 133%;
+}
+  /*
   .candle {
     width: 10px;
     height: 40px;
@@ -40,4 +70,4 @@ html, body {
   .candle.lit .flame {
     display: block;
   }
-  
+  */
